@@ -3,9 +3,10 @@ $(document).ready(function(){
 
 
     $('.face-to-face').click(function(){
-        $(this).css('background-color', '#4c7baa');
-        $('.video-conference').css('background-color', 'white');
-        $('.teleconference').css('background-color', 'white');
+        
+        $(this).addClass('text-active');
+        $('.video-conference').removeClass('text-active');
+        $('.teleconference').removeClass('text-active');
         
         $('.note-faceToFace').show();
         $('.note-videoConference').hide();
@@ -14,9 +15,9 @@ $(document).ready(function(){
     });
 
     $('.video-conference').click(function(){
-        $(this).css('background-color', '#4c7baa');
-        $('.face-to-face').css('background-color', 'white');
-        $('.teleconference').css('background-color', 'white');
+        $(this).addClass('text-active');
+        $('.face-to-face').removeClass('text-active');  
+        $('.teleconference').removeClass('text-active');  
 
         $('.note-faceToFace').hide();
         $('.note-videoConference').show();
@@ -24,9 +25,9 @@ $(document).ready(function(){
     })
 
     $('.teleconference').click(function(){
-        $(this).css('background-color', '#4c7baa');
-        $('.face-to-face').css('background-color', 'white');
-        $('.video-conference').css('background-color', 'white');
+        $(this).addClass('text-active');
+        $('.face-to-face').removeClass('text-active'); 
+        $('.video-conference').removeClass('text-active'); 
 
         $('.note-faceToFace').hide();
         $('.note-videoConference').hide();

@@ -152,6 +152,7 @@ body{
     margin-right: 15px;
 }
 
-/*.text-note{
-    float: left;
-}*/
+.text-active{
+    background: #007fff;
+    color: white;
+}
